@@ -349,6 +349,13 @@ declare module "miragejs/server" {
       options?: HandlerOptions
     ): void;
 
+    /** Handle a PROPFIND request to the given path. */
+    propfind(
+      path: string,
+      handler?: RouteHandler<Registry>,
+      options?: HandlerOptions
+    ): void;
+                                                           
     /** Handle a POST request to the given path. */
     post(
       path: string,
